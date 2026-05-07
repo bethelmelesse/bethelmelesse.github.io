@@ -4,7 +4,7 @@ Download my [Resume](https://github.com/bethelmelesse/bethelmelesse.github.io/bl
 AI/ML Engineer with a Master's degree in AI and 3+ years of experience spanning research and industry. Specialized in deep learning for NLP, Computer Vision, and Computational Drug Discovery, with extensive experience in data processing and model evaluation. Developed and optimized end-to-end pipelines across diverse applications, including multimodal systems, multilingual and low-resource language adaptation, and bioinformatics for structure-based drug discovery.
 
 ## Contact
-- Email: melessebethel@gmail.com
+- Email : My middle name and first name, at gmail (My middle name - melesse, first name - bethel)
 - Phone: +82-10-9734-3705
 - Github: [https://github.com/bethelmelesse](https://github.com/bethelmelesse)
 - LinkedIn: [https://linkedin.com/in/bethelmelesse](https://linkedin.com/in/bethelmelesse)
