@@ -486,6 +486,36 @@ ul { list-style: none; }
   color: var(--white);
 }
 
+/* ===== Hobbies ===== */
+.hobby-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.hobby-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hobby-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-soft);
+}
+.hobby-icon {
+  display: block;
+  font-size: 2.4rem;
+  line-height: 1;
+  margin-bottom: 14px;
+}
+.hobby-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: var(--charcoal);
+}
+
 /* ===== Footer / Contact ===== */
 .footer {
   background: linear-gradient(160deg, var(--charcoal) 0%, #4a3437 100%);
@@ -552,6 +582,7 @@ html.js .reveal.is-visible {
   .about-text { margin-left: auto; margin-right: auto; }
   .about-stats { justify-content: center; }
   .card-grid, #publications .card-grid, .skills-grid { grid-template-columns: 1fr; }
+  .hobby-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 720px) {
