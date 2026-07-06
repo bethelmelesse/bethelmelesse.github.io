@@ -5,7 +5,7 @@
   const navLinks = document.getElementById('navLinks');
   const progressBar = document.getElementById('progressBar');
   const yearEl = document.getElementById('year');
-  const sections = document.querySelectorAll('main > section, #hero');
+  const sections = document.querySelectorAll('main > section, #hero, footer[id]');
   const navAnchors = document.querySelectorAll('.nav-link');
 
   if (yearEl) yearEl.textContent = new Date().getFullYear();
