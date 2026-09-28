@@ -1,0 +1,44 @@
+@font-face{font-family:CardSans;src:url('../fonts/Lato-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:CardSerif;src:url('../fonts/StandardSerif.ttf') format('truetype');font-weight:400;font-display:swap}
+:root{--paper:#ffffff;--navy:#132a49;--slate:#46586e;--rule:#c9d0d9}
+*{box-sizing:border-box}
+body{margin:0;background:#e9ecef;color:var(--navy);font-family:CardSans,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:1320px;margin:auto;padding:48px 56px}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:2px solid var(--slate);outline-offset:5px}
+.portfolio-link{font-size:13px;color:var(--slate)}
+.heading-row{display:flex;justify-content:space-between;align-items:center;gap:24px;margin:52px 0 44px}
+.eyebrow,.side-label,.page-footer>span{font-size:10px;letter-spacing:2px}
+.eyebrow{color:var(--slate);margin:0 0 12px}
+h1{font-family:CardSerif,Georgia,serif;font-size:36px;font-weight:400;margin:0}
+button{border:1px solid #b9c2cc;background:transparent;color:var(--navy);padding:13px 18px;font:inherit;font-size:12px;cursor:pointer;white-space:nowrap}
+button:hover{background:var(--paper)}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.card-section{min-width:0}
+.side-label{margin-bottom:14px;color:#6b7785;letter-spacing:1.5px}
+.card{width:100%;aspect-ratio:9/5;position:relative;overflow:hidden;box-shadow:0 18px 30px -15px #132a4935;container-type:inline-size}
+.front{background:var(--paper);padding:7.5% 8% 7%;display:flex;flex-direction:column}
+h2{font-family:CardSerif,Georgia,serif;font-size:6.9cqw;font-weight:400;line-height:1.1;margin:0;white-space:nowrap}
+.identity{margin-block:auto}
+.identity p{margin:1.4cqw 0 0;font-size:2.8cqw;letter-spacing:.4cqw;text-transform:uppercase;color:var(--slate)}
+.identity .role{margin-top:.6cqw;text-transform:none;letter-spacing:.05cqw}
+.rule{height:.18cqw;background:var(--rule);margin:0 0 2.4cqw}
+address{font-style:normal;display:flex;justify-content:space-between;font-size:2.75cqw;color:var(--slate)}
+.col{display:grid;gap:1cqw;align-content:start}
+.col-label{font-size:2.4cqw;letter-spacing:.3cqw;color:var(--slate)}
+address a{display:flex;align-items:center;gap:1.3cqw;white-space:nowrap}
+address a:hover{text-decoration:underline}
+address svg{width:2.7cqw;height:2.7cqw;fill:none;stroke:var(--navy);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.back{background:var(--navy);display:flex;align-items:center;justify-content:space-between;padding:0 7%}
+.back-logo{display:block;width:60cqw;height:auto}
+.brand p{margin:3.4cqw 0 0;text-align:right;padding-top:3cqw;border-top:.15cqw solid #ffffff30;color:#b8c4d3;font-size:2.8cqw;letter-spacing:.1cqw}
+.qrs{display:flex;flex-direction:column;gap:5cqw}
+.qr{display:flex;flex-direction:column;align-items:center;gap:1.2cqw}
+.qr img{display:block;width:17cqw;height:17cqw;background:var(--paper);border-radius:1.5cqw}
+.qr span{color:#b8c4d3;font-size:2.4cqw;line-height:1;letter-spacing:.4cqw}
+.page-footer{border-top:1px solid #cfd5dc;margin-top:42px;padding-top:24px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:#6b7785}
+.page-footer p{font-size:12px;margin:0}.page-footer .print-note{width:100%;font-size:11px;line-height:1.6;max-width:620px}
+@media(max-width:900px){main{max-width:700px;padding:30px 16px}.cards{grid-template-columns:1fr;gap:32px}.heading-row{margin:36px 0;align-items:flex-start;flex-direction:column}h1{font-size:32px}}
+@page{size:90mm 50mm;margin:0}
+@media print{html,body{margin:0;padding:0;background:white}main{padding:0;margin:0;max-width:none}.page-header,.side-label,.page-footer{display:none}.cards{display:block}.card-section{width:90mm;height:50mm;break-after:page}.card-section:last-child{break-after:auto}.card{width:90mm;height:50mm;box-shadow:none;print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+@media print{html.bleed .card-section{width:96mm;height:56mm;padding:3mm;background:var(--paper);print-color-adjust:exact;-webkit-print-color-adjust:exact}html.bleed .card-section:has(.back){background:var(--navy)}}

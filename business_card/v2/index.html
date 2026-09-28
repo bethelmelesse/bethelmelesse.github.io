@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Business Card V2 — Bethel Melesse Tessema</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- ?bleed prints 96 × 56 mm pages (3 mm bleed) for the print shop -->
+  <script>if (location.search.includes('bleed')) { document.documentElement.classList.add('bleed'); document.write('<style>@page{size:96mm 56mm}</style>'); }</script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 13h18"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10v7M8 7v.01M12 17v-7M12 13a3 3 0 0 1 6 0v4"/></symbol>
+  </svg>
+  <main>
+    <header class="page-header">
+      <a class="portfolio-link" href="../">← Personal card</a>
+      <div class="heading-row"><div><p class="eyebrow">V2 · BUSINESS EDITION</p><h1>Formal business card</h1></div><button type="button" onclick="window.print()">Print / Save PDF</button></div>
+    </header>
+    <div class="cards">
+      <section class="card-section" aria-labelledby="front-label">
+        <div class="side-label" id="front-label"><span>01 / FRONT</span></div>
+        <article class="card front" aria-label="Front of business card">
+          <div class="identity"><h2>Bethel Melesse Tessema</h2><p>Founder at PARAHIGG</p><p class="role">AI/ML Engineer &amp; Researcher</p></div>
+          <div class="rule"></div>
+          <address>
+            <div class="col">
+              <span class="col-label">BUSINESS</span>
+              <a href="mailto:contact@parahigg.com"><svg><use href="#i-mail"/></svg>contact@parahigg.com</a>
+              <a href="https://parahigg.com"><svg><use href="#i-globe"/></svg>parahigg.com</a>
+            </div>
+            <div class="col">
+              <span class="col-label">PERSONAL</span>
+              <a href="tel:+821097343705"><svg><use href="#i-phone"/></svg>+82 10-9734-3705</a>
+            <a href="mailto:melessebethel@gmail.com"><svg><use href="#i-mail"/></svg>melessebethel@gmail.com</a>
+              <a href="https://bethelmelesse.github.io/"><svg><use href="#i-briefcase"/></svg>bethelmelesse.github.io</a>
+              <a href="https://linkedin.com/in/bethelmelesse"><svg><use href="#i-linkedin"/></svg>linkedin.com/in/bethelmelesse</a>
+            </div>
+          </address>
+        </article>
+      </section>
+      <section class="card-section" aria-labelledby="back-label">
+        <div class="side-label" id="back-label"><span>02 / BACK</span></div>
+        <article class="card back" aria-label="Back of business card">
+          <div class="brand"><img class="back-logo" src="../../asset/img/business_card/parahigg-logo-back.png" alt="PARAHIGG — Unified Legal Access"><p>AI-powered Legal Research Platform</p></div>
+          <div class="qrs">
+            <a class="qr" href="https://parahigg.com"><img src="../../asset/img/business_card/parahigg-qr.svg" alt="QR code linking to parahigg.com"><span>PARAHIGG</span></a>
+            <a class="qr" href="https://bethelmelesse.github.io/"><img src="../../asset/img/business_card/portfolio-qr.svg" alt="QR code linking to Bethel’s portfolio"><span>PORTFOLIO</span></a>
+          </div>
+        </article>
+      </section>
+    </div>
+    <footer class="page-footer"><span>WHITE · NAVY</span><p>90 × 50 mm · Two sides · Matte finish</p><p class="print-note">For a PDF, select 100% scale, enable background graphics, and disable headers and footers. Each side prints on its own card-sized page. For a print shop, send bethel-business-card-v2-print.pdf (3 mm bleed).</p></footer>
+  </main>
+</body>
+</html>
