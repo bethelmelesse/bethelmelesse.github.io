@@ -376,6 +376,10 @@ ul { list-style: none; }
   color: var(--charcoal-soft);
   margin-bottom: 16px;
 }
+.timeline-brand { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+.timeline-brand-text { flex: 1; }
+.timeline-brand .timeline-org { margin-bottom: 0; }
+.org-logo { width: 88px; height: 64px; object-fit: contain; flex-shrink: 0; }
 .timeline-list li {
   position: relative;
   padding-left: 20px;
@@ -431,6 +435,10 @@ ul { list-style: none; }
   margin-bottom: 8px;
   color: var(--charcoal);
 }
+.edu-card { display: flex; flex-direction: column; align-items: flex-start; }
+.edu-bottom { display: flex; justify-content: space-between; align-items: center; gap: 12px; width: 100%; margin-top: auto; padding-top: 8px; }
+.edu-bottom .edu-detail { margin-top: 0; }
+.edu-logo { height: 44px; width: auto; max-width: 96px; object-fit: contain; }
 .edu-school, .pub-detail { color: var(--charcoal-soft); font-size: 0.92rem; }
 .edu-detail { color: var(--charcoal-soft); font-size: 0.88rem; margin-top: 8px; }
 
@@ -606,4 +614,6 @@ html.js .reveal.is-visible {
   .section { padding: 90px 0; }
   .timeline { padding-left: 24px; }
   .timeline-dot { left: -31px; }
+  .timeline-brand { align-items: flex-start; gap: 12px; }
+  .org-logo { width: 44px; height: 36px; }
 }
