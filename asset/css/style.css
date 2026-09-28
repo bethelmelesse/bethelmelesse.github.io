@@ -616,6 +616,6 @@ html.js .reveal.is-visible {
   .timeline-dot { left: -31px; }
   .timeline-brand { flex-direction: column; align-items: flex-start; gap: 12px; }
   .timeline-brand-text { width: 100%; }
-  .org-logo { width: auto; height: 32px; }
+  .org-logo { width: 48px; height: 32px; object-position: left center; }
   .timeline-date { white-space: nowrap; }
 }
