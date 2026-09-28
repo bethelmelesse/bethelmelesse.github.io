@@ -614,6 +614,8 @@ html.js .reveal.is-visible {
   .section { padding: 90px 0; }
   .timeline { padding-left: 24px; }
   .timeline-dot { left: -31px; }
-  .timeline-brand { align-items: flex-start; gap: 12px; }
-  .org-logo { width: 44px; height: 36px; }
+  .timeline-brand { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .timeline-brand-text { width: 100%; }
+  .org-logo { width: auto; height: 40px; }
+  .timeline-date { white-space: nowrap; }
 }
