@@ -187,6 +187,7 @@ ul { list-style: none; }
   margin-bottom: 36px;
 }
 .hero-tagline strong { color: var(--gold); font-weight: 600; }
+.hero-tagline a:hover strong { text-decoration: underline; }
 .hero-actions { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
 .hero-socials { display: flex; gap: 12px; flex-wrap: wrap; }
 .hero-social {
