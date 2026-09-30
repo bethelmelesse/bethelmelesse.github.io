@@ -308,6 +308,9 @@ ul { list-style: none; }
 }
 .about-copy .section-title { margin-bottom: 24px; }
 .about-text { color: var(--charcoal-soft); margin-bottom: 18px; max-width: 620px; }
+.about-text .hl { color: var(--rose-dark); font-weight: 500; }
+.about-text a.hl { font-weight: 600; }
+.about-text a.hl:hover { text-decoration: underline; }
 .about-stats {
   display: flex;
   gap: 40px;
