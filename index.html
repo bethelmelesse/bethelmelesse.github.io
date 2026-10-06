@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="asset/css/style.css?v=8">
+<link rel="stylesheet" href="asset/css/style.css?v=9">
 </head>
 <body>
 
@@ -285,167 +285,161 @@
       <h2 class="section-title reveal">Tools of the trade</h2>
       <p class="skills-focus reveal"><span class="skills-focus-label">Domains</span> Legal information retrieval · Low-resource languages · Drug discovery · ML fundamentals</p>
 
-      <div class="skills-grid">
-        <div class="skill-card reveal skill-card--wide">
-          <div class="skill-card-head">
-            <span class="skill-num">01</span>
+      <div class="skills-explorer reveal">
+        <div class="skills-tabs" role="tablist" aria-label="Skill areas">
+          <button type="button" class="skills-tab" role="tab" id="skill-tab-rag" aria-controls="skill-panel-rag" aria-selected="true">RAG &amp; Retrieval<span class="skills-count">8</span></button>
+          <button type="button" class="skills-tab" role="tab" id="skill-tab-llm" aria-controls="skill-panel-llm" aria-selected="false">LLMs &amp; Prompting<span class="skills-count">11</span></button>
+          <button type="button" class="skills-tab" role="tab" id="skill-tab-nlp" aria-controls="skill-panel-nlp" aria-selected="false">Multilingual NLP<span class="skills-count">6</span></button>
+          <button type="button" class="skills-tab" role="tab" id="skill-tab-drug" aria-controls="skill-panel-drug" aria-selected="false">Drug Discovery<span class="skills-count">7</span></button>
+          <button type="button" class="skills-tab" role="tab" id="skill-tab-ml" aria-controls="skill-panel-ml" aria-selected="false">ML Fundamentals<span class="skills-count">9</span></button>
+          <button type="button" class="skills-tab" role="tab" id="skill-tab-dl" aria-controls="skill-panel-dl" aria-selected="false">Deep Learning<span class="skills-count">8</span></button>
+          <button type="button" class="skills-tab" role="tab" id="skill-tab-data" aria-controls="skill-panel-data" aria-selected="false">Data &amp; Documents<span class="skills-count">9</span></button>
+          <button type="button" class="skills-tab" role="tab" id="skill-tab-eval" aria-controls="skill-panel-eval" aria-selected="false">Evaluation &amp; MLOps<span class="skills-count">6</span></button>
+          <button type="button" class="skills-tab" role="tab" id="skill-tab-db" aria-controls="skill-panel-db" aria-selected="false">Databases &amp; Storage<span class="skills-count">4</span></button>
+          <button type="button" class="skills-tab" role="tab" id="skill-tab-tools" aria-controls="skill-panel-tools" aria-selected="false">Languages &amp; Tools<span class="skills-count">14</span></button>
+        </div>
+        <div class="skills-panels">
+          <div class="skills-panel" role="tabpanel" id="skill-panel-rag" aria-labelledby="skill-tab-rag">
             <h3>RAG &amp; Retrieval</h3>
+            <p class="skills-where">PARAHIGG legal search; low-resource IR research at Ajou.</p>
+            <div class="tag-list">
+              <span class="tag">RAG pipelines</span>
+              <span class="tag">Hybrid search (dense + BM25)</span>
+              <span class="tag">Reciprocal rank fusion</span>
+              <span class="tag">Cross-encoder reranking</span>
+              <span class="tag">Multi-query retrieval</span>
+              <span class="tag">Metadata filtering</span>
+              <span class="tag">Dense retrieval (BERT-style)</span>
+              <span class="tag">TF-IDF / BM25 baselines</span>
+            </div>
           </div>
-          <div class="tag-list">
-            <span class="tag">RAG pipelines</span>
-            <span class="tag">Hybrid search (dense + BM25)</span>
-            <span class="tag">Reciprocal rank fusion</span>
-            <span class="tag">Cross-encoder reranking</span>
-            <span class="tag">Multi-query retrieval</span>
-            <span class="tag">Metadata filtering</span>
-            <span class="tag">Dense retrieval (BERT-style)</span>
-            <span class="tag">TF-IDF / BM25 baselines</span>
+          <div class="skills-panel" role="tabpanel" id="skill-panel-llm" aria-labelledby="skill-tab-llm">
+            <h3>LLMs &amp; Prompting</h3>
+            <p class="skills-where">PARAHIGG question answering; UnifiedCrawl fine-tuning.</p>
+            <div class="tag-list">
+              <span class="tag">Grounded generation with citations</span>
+              <span class="tag">Query rewriting</span>
+              <span class="tag">Conversational memory</span>
+              <span class="tag">Prompt versioning</span>
+              <span class="tag">LLM cost tracking</span>
+              <span class="tag">QLoRA fine-tuning</span>
+              <span class="tag">OpenRouter</span>
+              <span class="tag">Ollama</span>
+              <span class="tag">Haystack</span>
+              <span class="tag">Hugging Face Transformers</span>
+              <span class="tag">sentence-transformers</span>
+            </div>
           </div>
-        </div>
-        <div class="skill-card reveal skill-card--wide">
-          <div class="skill-card-head">
-            <span class="skill-num">02</span>
-            <h3>LLMs &amp; Prompt Engineering</h3>
-          </div>
-          <div class="tag-list">
-            <span class="tag">Grounded generation with citations</span>
-            <span class="tag">Query rewriting</span>
-            <span class="tag">Conversational memory</span>
-            <span class="tag">Prompt versioning</span>
-            <span class="tag">LLM cost tracking</span>
-            <span class="tag">QLoRA fine-tuning</span>
-            <span class="tag">OpenRouter</span>
-            <span class="tag">Ollama</span>
-            <span class="tag">Haystack</span>
-            <span class="tag">Hugging Face Transformers</span>
-            <span class="tag">sentence-transformers</span>
-          </div>
-        </div>
-        <div class="skill-card reveal skill-card--xwide skill-card--full-md">
-          <div class="skill-card-head">
-            <span class="skill-num">03</span>
-            <h3>Data Ingestion &amp; Document Processing</h3>
-          </div>
-          <div class="tag-list">
-            <span class="tag">Web crawling (BeautifulSoup, REST APIs)</span>
-            <span class="tag">PDF processing (PyMuPDF, pikepdf, fontTools)</span>
-            <span class="tag">OCR (Tesseract)</span>
-            <span class="tag">Docling layout extraction</span>
-            <span class="tag">Structure-aware chunking</span>
-            <span class="tag">Contextual embeddings</span>
-            <span class="tag">Resumable batch pipelines</span>
-            <span class="tag">Common Crawl at scale (1000+ TB)</span>
-            <span class="tag">Deduplication</span>
-          </div>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-card-head">
-            <span class="skill-num">04</span>
+          <div class="skills-panel" role="tabpanel" id="skill-panel-nlp" aria-labelledby="skill-tab-nlp">
             <h3>Multilingual NLP</h3>
+            <p class="skills-where">English and Amharic legal text; UnifiedCrawl datasets.</p>
+            <div class="tag-list">
+              <span class="tag">English ↔ Amharic translation</span>
+              <span class="tag">Amharic text normalization</span>
+              <span class="tag">Legacy-font-to-Unicode conversion</span>
+              <span class="tag">Lexicon-based decoding</span>
+              <span class="tag">Low-resource language datasets</span>
+              <span class="tag">Multilingual LLM adaptation</span>
+            </div>
           </div>
-          <div class="tag-list">
-            <span class="tag">English ↔ Amharic translation</span>
-            <span class="tag">Amharic text normalization</span>
-            <span class="tag">Legacy-font-to-Unicode conversion</span>
-            <span class="tag">Lexicon-based decoding</span>
-            <span class="tag">Low-resource language datasets</span>
-            <span class="tag">Multilingual LLM adaptation</span>
-          </div>
-        </div>
-        <div class="skill-card reveal skill-card--wide">
-          <div class="skill-card-head">
-            <span class="skill-num">05</span>
-            <h3>ML Fundamentals</h3>
-          </div>
-          <div class="tag-list">
-            <span class="tag">Supervised &amp; unsupervised learning</span>
-            <span class="tag">Classification &amp; regression</span>
-            <span class="tag">Feature engineering</span>
-            <span class="tag">Train / validation / test splits</span>
-            <span class="tag">Cross-validation</span>
-            <span class="tag">Overfitting &amp; regularization</span>
-            <span class="tag">Gradient-based optimization</span>
-            <span class="tag">Hyperparameter tuning</span>
-            <span class="tag">Loss functions &amp; metrics</span>
-          </div>
-        </div>
-        <div class="skill-card reveal skill-card--wide">
-          <div class="skill-card-head">
-            <span class="skill-num">06</span>
-            <h3>Deep Learning</h3>
-          </div>
-          <div class="tag-list">
-            <span class="tag">Transformers from scratch</span>
-            <span class="tag">Graph Neural Networks</span>
-            <span class="tag">Multi-task learning</span>
-            <span class="tag">Attention mechanisms</span>
-            <span class="tag">Zero-shot &amp; multi-modal classification</span>
-            <span class="tag">CNNs / RNNs</span>
-            <span class="tag">Computer Vision</span>
-            <span class="tag">Distributed multi-GPU training</span>
-          </div>
-        </div>
-        <div class="skill-card reveal skill-card--xwide">
-          <div class="skill-card-head">
-            <span class="skill-num">07</span>
+          <div class="skills-panel" role="tabpanel" id="skill-panel-drug" aria-labelledby="skill-tab-drug">
             <h3>Drug Discovery</h3>
+            <p class="skills-where">Forward synthesis and protein–ligand models at 3Billion.</p>
+            <div class="tag-list">
+              <span class="tag">Protein–ligand interaction</span>
+              <span class="tag">Binding affinity &amp; pose prediction</span>
+              <span class="tag">Synthetic feasibility scoring</span>
+              <span class="tag">RL-based molecular generation</span>
+              <span class="tag">PDB / MOL2 / SDF processing</span>
+              <span class="tag">RDKit</span>
+              <span class="tag">DeepChem</span>
+            </div>
           </div>
-          <div class="tag-list">
-            <span class="tag">Protein–ligand interaction prediction</span>
-            <span class="tag">Binding affinity &amp; pose prediction</span>
-            <span class="tag">Synthetic feasibility scoring</span>
-            <span class="tag">RL-based molecular generation</span>
-            <span class="tag">PDB / MOL2 / SDF processing</span>
-            <span class="tag">RDKit</span>
-            <span class="tag">DeepChem</span>
+          <div class="skills-panel" role="tabpanel" id="skill-panel-ml" aria-labelledby="skill-tab-ml">
+            <h3>ML Fundamentals</h3>
+            <p class="skills-where">M.S. in AI and every project since.</p>
+            <div class="tag-list">
+              <span class="tag">Supervised &amp; unsupervised learning</span>
+              <span class="tag">Classification &amp; regression</span>
+              <span class="tag">Feature engineering</span>
+              <span class="tag">Train / val / test splits</span>
+              <span class="tag">Cross-validation</span>
+              <span class="tag">Overfitting &amp; regularization</span>
+              <span class="tag">Gradient-based optimization</span>
+              <span class="tag">Hyperparameter tuning</span>
+              <span class="tag">Loss functions &amp; metrics</span>
+            </div>
           </div>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-card-head">
-            <span class="skill-num">08</span>
+          <div class="skills-panel" role="tabpanel" id="skill-panel-dl" aria-labelledby="skill-tab-dl">
+            <h3>Deep Learning</h3>
+            <p class="skills-where">GNNs at 3Billion; Transformers and CNNs built from scratch.</p>
+            <div class="tag-list">
+              <span class="tag">Transformers from scratch</span>
+              <span class="tag">Graph Neural Networks</span>
+              <span class="tag">Multi-task learning</span>
+              <span class="tag">Attention mechanisms</span>
+              <span class="tag">Zero-shot &amp; multi-modal classification</span>
+              <span class="tag">CNNs / RNNs</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Distributed multi-GPU training</span>
+            </div>
+          </div>
+          <div class="skills-panel" role="tabpanel" id="skill-panel-data" aria-labelledby="skill-tab-data">
+            <h3>Data &amp; Documents</h3>
+            <p class="skills-where">PARAHIGG legal corpus; 1000+ TB of Common Crawl.</p>
+            <div class="tag-list">
+              <span class="tag">Web crawling (BeautifulSoup, REST APIs)</span>
+              <span class="tag">PDF processing (PyMuPDF, pikepdf, fontTools)</span>
+              <span class="tag">OCR (Tesseract)</span>
+              <span class="tag">Docling layout extraction</span>
+              <span class="tag">Structure-aware chunking</span>
+              <span class="tag">Contextual embeddings</span>
+              <span class="tag">Resumable batch pipelines</span>
+              <span class="tag">Common Crawl at scale (1000+ TB)</span>
+              <span class="tag">Deduplication</span>
+            </div>
+          </div>
+          <div class="skills-panel" role="tabpanel" id="skill-panel-eval" aria-labelledby="skill-tab-eval">
             <h3>Evaluation &amp; MLOps</h3>
+            <p class="skills-where">Retrieval metrics, chemistry benchmarks, LLM evals.</p>
+            <div class="tag-list">
+              <span class="tag">Hit rate / MRR / precision</span>
+              <span class="tag">AUROC / AUPRC</span>
+              <span class="tag">Tanimoto similarity</span>
+              <span class="tag">Perplexity &amp; few-shot evals</span>
+              <span class="tag">Pipeline tracing</span>
+              <span class="tag">MLflow</span>
+            </div>
           </div>
-          <div class="tag-list">
-            <span class="tag">Hit rate / MRR / precision</span>
-            <span class="tag">AUROC / AUPRC</span>
-            <span class="tag">Tanimoto similarity</span>
-            <span class="tag">Perplexity &amp; few-shot evals</span>
-            <span class="tag">Pipeline tracing</span>
-            <span class="tag">MLflow</span>
-          </div>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-card-head">
-            <span class="skill-num">09</span>
+          <div class="skills-panel" role="tabpanel" id="skill-panel-db" aria-labelledby="skill-tab-db">
             <h3>Databases &amp; Storage</h3>
+            <p class="skills-where">PARAHIGG production stack.</p>
+            <div class="tag-list">
+              <span class="tag">Qdrant (vector DB)</span>
+              <span class="tag">PostgreSQL (Supabase)</span>
+              <span class="tag">Cloudflare R2</span>
+              <span class="tag">Supabase Storage</span>
+            </div>
           </div>
-          <div class="tag-list">
-            <span class="tag">Qdrant (vector DB)</span>
-            <span class="tag">PostgreSQL (Supabase)</span>
-            <span class="tag">Cloudflare R2</span>
-            <span class="tag">Supabase Storage</span>
-          </div>
-        </div>
-        <div class="skill-card reveal skill-card--xwide skill-card--full-md">
-          <div class="skill-card-head">
-            <span class="skill-num">10</span>
+          <div class="skills-panel" role="tabpanel" id="skill-panel-tools" aria-labelledby="skill-tab-tools">
             <h3>Languages &amp; Tools</h3>
-          </div>
-          <div class="tag-list">
-            <span class="tag">Python</span>
-            <span class="tag">Java</span>
-            <span class="tag">Bash</span>
-            <span class="tag">PyTorch (CUDA)</span>
-            <span class="tag">TensorFlow</span>
-            <span class="tag">NumPy</span>
-            <span class="tag">Docker</span>
-            <span class="tag">uv</span>
-            <span class="tag">Conda</span>
-            <span class="tag">Git / GitHub</span>
-            <span class="tag">Linux</span>
-            <span class="tag">pytest</span>
-            <span class="tag">mypy</span>
-            <span class="tag">Ruff</span>
+            <p class="skills-where">Daily drivers across all work.</p>
+            <div class="tag-list">
+              <span class="tag">Python</span>
+              <span class="tag">Java</span>
+              <span class="tag">Bash</span>
+              <span class="tag">PyTorch (CUDA)</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">Docker</span>
+              <span class="tag">uv</span>
+              <span class="tag">Conda</span>
+              <span class="tag">Git / GitHub</span>
+              <span class="tag">Linux</span>
+              <span class="tag">pytest</span>
+              <span class="tag">mypy</span>
+              <span class="tag">Ruff</span>
+            </div>
           </div>
         </div>
       </div>
@@ -601,6 +595,6 @@
   </div>
 </footer>
 
-<script src="asset/js/main.js?v=4"></script>
+<script src="asset/js/main.js?v=5"></script>
 </body>
 </html>

@@ -103,6 +103,32 @@
     document.addEventListener('visibilitychange', update);
   }
 
+  // Skills explorer: show one area at a time (all panels stay visible without JS)
+  const skillTabs = document.querySelectorAll('.skills-tab');
+  const showSkillArea = (tab) => {
+    skillTabs.forEach((t) => {
+      const selected = t === tab;
+      t.setAttribute('aria-selected', selected);
+      t.tabIndex = selected ? 0 : -1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !selected;
+    });
+  };
+  skillTabs.forEach((tab, i) => {
+    tab.addEventListener('click', () => {
+      showSkillArea(tab);
+      tab.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+    });
+    tab.addEventListener('keydown', (e) => {
+      const step = { ArrowDown: 1, ArrowRight: 1, ArrowUp: -1, ArrowLeft: -1 }[e.key];
+      if (!step) return;
+      e.preventDefault();
+      const next = skillTabs[(i + step + skillTabs.length) % skillTabs.length];
+      next.click();
+      next.focus();
+    });
+  });
+  if (skillTabs.length) showSkillArea(skillTabs[0]);
+
   // Scroll-reveal animations
   const revealEls = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver(
