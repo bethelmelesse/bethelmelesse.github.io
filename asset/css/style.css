@@ -716,7 +716,14 @@ html.js .reveal.is-visible {
   .about-stats { justify-content: center; }
   .card-grid, #publications .card-grid { grid-template-columns: 1fr; }
   .skills-explorer { grid-template-columns: 1fr; }
-  .skills-tabs { flex-direction: row; overflow-x: auto; padding-bottom: 4px; }
+  .skills-tabs {
+    flex-direction: row;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 4px 32px 8px 0;
+    mask-image: linear-gradient(90deg, #000 85%, transparent);
+    -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent);
+  }
   .skills-tab { white-space: nowrap; flex-shrink: 0; }
   .skills-focus { border-radius: var(--radius-md); flex-wrap: wrap; padding: 10px 16px; }
   .hobby-grid { grid-template-columns: repeat(2, 1fr); }
@@ -754,6 +761,7 @@ html.js .reveal.is-visible {
 
   .section { padding: 72px 0; }
   .skills-panel { padding: 24px; }
+  .skills-panel .tag { font-size: 0.8rem; padding: 7px 13px; }
   .section-title { margin-bottom: 32px; }
 
   /* About */

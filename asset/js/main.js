@@ -116,7 +116,10 @@
   skillTabs.forEach((tab, i) => {
     tab.addEventListener('click', () => {
       showSkillArea(tab);
-      tab.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+      // Centre the tab in the horizontal tab row on phones (no-op when the list is vertical)
+      const row = tab.parentElement;
+      const offset = tab.getBoundingClientRect().left - row.getBoundingClientRect().left;
+      row.scrollTo({ left: row.scrollLeft + offset - (row.clientWidth - tab.offsetWidth) / 2, behavior: 'smooth' });
     });
     tab.addEventListener('keydown', (e) => {
       const step = { ArrowDown: 1, ArrowRight: 1, ArrowUp: -1, ArrowLeft: -1 }[e.key];
