@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="asset/css/style.css?v=3">
+<link rel="stylesheet" href="asset/css/style.css?v=6">
 </head>
 <body>
 
@@ -316,29 +316,99 @@
       <h2 class="section-title reveal">What I do for fun</h2>
 
       <div class="hobby-grid">
-        <div class="hobby-card reveal">
-          <span class="hobby-icon" aria-hidden="true">🥾</span>
-          <h3>Hiking</h3>
+        <div class="hobby-card flip-card reveal" role="button" tabindex="0" aria-pressed="false" aria-label="Hiking: flip for details">
+          <div class="flip-inner">
+            <div class="flip-face flip-front">
+              <span class="hobby-icon" aria-hidden="true">🥾</span>
+              <h3>Hiking</h3>
+            </div>
+            <div class="flip-face flip-back">
+              <h3>Hiking</h3>
+              <div class="hobby-stats">
+                <div class="hobby-stat"><span class="hobby-num">1,573 m</span><span class="hobby-label">Highest summit</span></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="hobby-card reveal">
-          <span class="hobby-icon" aria-hidden="true">🤿</span>
-          <h3>Scuba Diving</h3>
+        <div class="hobby-card flip-card reveal" role="button" tabindex="0" aria-pressed="false" aria-label="Scuba diving: flip for details">
+          <div class="flip-inner">
+            <div class="flip-face flip-front">
+              <span class="hobby-icon" aria-hidden="true">🤿</span>
+              <h3>Scuba Diving</h3>
+            </div>
+            <div class="flip-face flip-back">
+              <h3>Scuba Diving</h3>
+              <div class="hobby-stats">
+                <div class="hobby-stat"><span class="hobby-num">50+</span><span class="hobby-label">Dives</span></div>
+                <div class="hobby-stat"><span class="hobby-num">65 min</span><span class="hobby-label">Longest dive</span></div>
+                <div class="hobby-stat"><span class="hobby-num">10.7</span><span class="hobby-label">Best SAC (L/min)</span></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="hobby-card reveal">
-          <span class="hobby-icon" aria-hidden="true">🎪</span>
-          <h3>Festivals &amp; Concerts</h3>
+        <div class="hobby-card flip-card reveal" role="button" tabindex="0" aria-pressed="false" aria-label="Festivals and concerts: flip for details">
+          <div class="flip-inner">
+            <div class="flip-face flip-front">
+              <span class="hobby-icon" aria-hidden="true">🎪</span>
+              <h3>Festivals &amp; Concerts</h3>
+            </div>
+            <div class="flip-face flip-back">
+              <h3>Festivals &amp; Concerts</h3>
+              <ul class="hobby-items">
+                <li>Guns N’ Roses</li>
+                <li>Deep Purple</li>
+                <li>Bryan Adams</li>
+                <li>Dua Lipa</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="hobby-card reveal">
-          <span class="hobby-icon" aria-hidden="true">🏋️</span>
-          <h3>Working Out</h3>
+        <div class="hobby-card flip-card reveal" role="button" tabindex="0" aria-pressed="false" aria-label="Working out: flip for details">
+          <div class="flip-inner">
+            <div class="flip-face flip-front">
+              <span class="hobby-icon" aria-hidden="true">🏋️</span>
+              <h3>Working Out</h3>
+            </div>
+            <div class="flip-face flip-back">
+              <h3>Working Out</h3>
+              <ul class="hobby-items">
+                <li>Calisthenics</li>
+                <li>Weight training</li>
+                <li>Pilates</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="hobby-card reveal">
-          <span class="hobby-icon" aria-hidden="true">📺</span>
-          <h3>TV Shows</h3>
+        <div class="hobby-card flip-card reveal" role="button" tabindex="0" aria-pressed="false" aria-label="TV shows: flip for details">
+          <div class="flip-inner">
+            <div class="flip-face flip-front">
+              <span class="hobby-icon" aria-hidden="true">📺</span>
+              <h3>TV Shows</h3>
+            </div>
+            <div class="flip-face flip-back">
+              <h3>TV Shows</h3>
+              <ul class="hobby-items">
+                <li>Grey’s Anatomy</li>
+                <li>Criminal Minds</li>
+                <li>Early-2000s shows</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="hobby-card reveal">
-          <span class="hobby-icon" aria-hidden="true">🎧</span>
-          <h3>Music</h3>
+        <div class="hobby-card flip-card reveal" role="button" tabindex="0" aria-pressed="false" aria-label="Music: flip for details">
+          <div class="flip-inner">
+            <div class="flip-face flip-front">
+              <span class="hobby-icon" aria-hidden="true">🎧</span>
+              <h3>Music</h3>
+            </div>
+            <div class="flip-face flip-back">
+              <h3>Music</h3>
+              <ul class="hobby-items">
+                <li>Miley Cyrus</li>
+                <li><a href="https://open.spotify.com/album/5DvJgsMLbaR1HmAI6VhfcQ" target="_blank" rel="noopener">Endless Summer Vacation ↗</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -384,6 +454,6 @@
   </div>
 </footer>
 
-<script src="asset/js/main.js"></script>
+<script src="asset/js/main.js?v=4"></script>
 </body>
 </html>
